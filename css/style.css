@@ -1,10 +1,11 @@
 * {
   box-sizing: border-box;
+  border: solid 1px red;
 }
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 10px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
@@ -15,7 +16,6 @@ h3,
 h4,
 h5,
 h6 {
-  border: solid green 1px;
   margin: 0;
   font-size: 100%;
 }
@@ -34,60 +34,172 @@ h1 {
   font-size: 2em;
 }
 
+h2 {
+  padding: 5px;
+  font-size: 1.5em;
+  margin: 5px;
+}
+
 header {
-  border: solid red 1px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
+  padding: 5px;
 }
 
 header ul {
-  border: solid blue 1px;
   display: flex;
   flex-direction: column;
   align-items: center;
   list-style: none;
-  min-width: 20vw;
   padding: 10px;
 }
 
 header li {
-  border: solid orange 1px;
+  padding: 5px;
+}
+
+hr {
+  border: solid grey 3px;
+  min-width: 90vw;
+}
+
+footer div {
   padding: 5px;
 }
 
 .hero-banner {
   display: flex;
-  border: solid orange 1px;
   justify-content: flex-end;
   align-items: flex-end;
   height: 200px;
   background-image: url(/images/02-hero-bg.jpg);
-  color: blue;
+  color: rgb(255, 51, 0);
   font-size: 1.5em;
 }
 
-.page-wrapper,
-.page-section {
+.page-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  object-fit:scale-down
 }
 
-.work-content {
-  margin: auto;
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#work-content-1 {
-  position: relative;
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-img {
-  max-width: 90vw;
-  justify-items: center;
+.portfolio-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+
+  hr {
+    display: none;
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header ul {
+    flex-direction: row;
+    justify-content: space-evenly;
+    min-width: 50vw;
+  }
+
+  .page-wrapper section{
+    margin-bottom: 10px;
+  }
+
+  .about-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .about-container h2 {
+    flex-basis: 20%;
+  }
+
+  .about-container div {
+    flex-basis: 76%;
+  }
+
+  .portfolio-row {
+    flex-direction: row;
+  }
+
+  .portfolio-row-1 {
+    justify-content: space-between;
+  }
+
+  .portfolio-row-1 h2 {
+    flex-basis: 20%;
+  }
+
+  .portfolio-row-1 div {
+    flex-basis: 76%;
+  }
+
+  .portfolio-row-2 {
+    justify-content: flex-end;
+  }
+
+  .portfolio-row-2 div {
+    flex-basis: 38%;
+  }
+
+  .portfolio-row-3 {
+    justify-content: flex-end;
+  }
+
+  .portfolio-row-3 div {
+    flex-basis: 38%;
+  }
+
+  .contact-container {
+    flex-direction: row;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+}
+
+/* @media screen and (min-width: 992px) {
+
+  .about-container {
+    flex-direction: row;
+    justify-content: center;
+    max-width: 90vw;
+  /* }
+  .page-wrapper {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+} */
+
+
 
 /* Attempt to do a grid layout - will try Flex next */
 
@@ -138,30 +250,3 @@ img {
   grid-area: work-content-4;
   min-height: 100px;
 } */
-
-.contact {
-  display: flex;
-  padding: 10px;
-  flex-direction: column;  
-  align-items: center;
-}
-
-.contact h2 {
-  padding: 10px;
-  font-size: 1.5em;
-}
-
-.page-wrapper h2 {
-  padding: 10px;
-  font-size: 1.5em;
-}
-
-.contact div {
-  border: solid orange 1px;
-  padding: 10px;
-}
-
-hr {
-  border: solid grey 3px;
-  min-width: 90vw;
-}
