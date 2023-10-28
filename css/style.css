@@ -74,6 +74,7 @@ footer div {
   align-items: flex-end;
   height: 200px;
   background-image: url(/images/02-hero-bg.jpg);
+  background-size: cover;
   color: rgb(255, 51, 0);
   font-size: 1.5em;
 }
@@ -166,14 +167,6 @@ footer div {
     flex-basis: 38%;
   }
 
-  .portfolio-row-3 {
-    justify-content: flex-end;
-  }
-
-  .portfolio-row-3 div {
-    flex-basis: 38%;
-  }
-
   .contact-container {
     flex-direction: row;
   }
@@ -183,70 +176,4 @@ footer div {
     flex-direction: row;
     justify-content: space-between;
   }
-
 }
-
-/* @media screen and (min-width: 992px) {
-
-  .about-container {
-    flex-direction: row;
-    justify-content: center;
-    max-width: 90vw;
-  /* }
-  .page-wrapper {
-    flex: 0 0 33.333%;
-    max-width: 33.333%;
-  }
-} */
-
-
-
-/* Attempt to do a grid layout - will try Flex next */
-
-/* .page-wrapper {
-  display: grid;
-  text-align: center;
-  padding: 10px;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(7, 1fr);
-  grid-template-areas:
-  "about-title"
-  "about-content"
-  "work-title"
-  "work-content-1"
-  "work-content-2"
-  "work-content-3"
-  "work-content-4";
-}
-
-#about-title {
-  grid-area: about-title;
-}
-
-#about-content {
-  grid-area: about-content;
-}
-
-#work-title {
-  grid-area: work-title;
-}
-
-#work-content-1 {
-  grid-area: work-content-1;
-  min-height: 100px;
-}
-
-#work-content-2 {
-  grid-area: work-content-2;
-  min-height: 100px;
-}
-
-#work-content-3 {
-  grid-area: work-content-3;
-  min-height: 100px;
-}
-
-#work-content-4 {
-  grid-area: work-content-4;
-  min-height: 100px;
-} */
