@@ -89,10 +89,6 @@ footer div {
   border-bottom: solid grey 3px;
 }
 
-img {
-  b
-}
-
 .hero-banner {
   display: flex;
   justify-content: center;
@@ -141,13 +137,21 @@ img {
 
 .image-container {
   position: relative;
-  gap: 12px;
 }
 
-.image-container img {
+img {
   width: 100%;
   height: auto;
   border: solid grey 5px;
+  opacity: 0.8;
+}
+
+img:hover {
+  width: 100%;
+  height: auto;
+  border: solid grey 5px;
+  opacity: 1;
+  cursor: pointer;
 }
 
 .overlay {
@@ -212,7 +216,7 @@ img {
     justify-content: space-between;
     align-items: flex-start;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .about-container h2 {
@@ -225,7 +229,7 @@ img {
   }
 
   .portfolio-container {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .portfolio-row {
