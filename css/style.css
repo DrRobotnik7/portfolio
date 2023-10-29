@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  /* border: solid 1px red; */
 }
 
 body {
@@ -76,6 +75,7 @@ hr {
 }
 
 figcaption {
+  font-size: 1em;
   font-weight: bold;
 }
 
@@ -89,15 +89,18 @@ footer div {
   border-bottom: solid grey 3px;
 }
 
+img {
+  b
+}
+
 .hero-banner {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 200px;
   margin: 0 -20px 0 -20px;
-  background-image: url(/images/02-hero-bg.jpg);
+  background-image: url(/images/Banner.jpg);
   background-size: cover;
-
 }
 
 .hero-banner h2 {
@@ -154,8 +157,7 @@ footer div {
   border-left: solid grey 5px;
   background-color: rgba(128, 128, 128, 0.95);
   color: black; 
-  padding: 10px 20px; 
-  font-size: 20px; 
+  padding: 10px 20px;
   text-align: left;
 }
 
