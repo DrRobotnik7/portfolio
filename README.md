@@ -30,7 +30,7 @@ Hover over various elements to add some colour to the website!
 
 Click on the project tiles and you will be directed to the selected web application in a new tab in your browser.
 
-Note that currently only the Horiseon and PreWork tiles currently point to a valid URL. The other images are placeholders...for now!
+Note that currently only the Horiseon and Prework tiles currently point to a valid URL. The other images are placeholders...for now!
 
 ![Jack Johnson Portfolio Web Application](/assets/images/Web%20App%20Screenshot.png)
 
