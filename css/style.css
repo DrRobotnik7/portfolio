@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+:root {
+  --heading-color: rgba(128, 128, 128, 0.95);
+  --font-color: black;
+  --border: solid grey 3px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -34,8 +40,8 @@ a {
 }
 
 h1 {
-  background-color: rgba(128, 128, 128);
-  color: black;
+  background-color: var(--heading-color);
+  color: var(--font-color);
   padding: 10px 50px;
   font-size: 2em;
 }
@@ -44,8 +50,8 @@ h2 {
   padding: 5px;
   font-size: 1.5em;
   margin: 5px;
-  background-color: rgba(128, 128, 128);
-  color: black;
+  background-color: var(--heading-color);
+  color: var(--font-color);
   padding: 10px 10px;
 }
 
@@ -71,11 +77,11 @@ nav {
 }
 
 header a {
-  border-bottom: solid grey 3px;
+  border-bottom: var(--border);
 }
 
 hr {
-  border: solid grey 3px;
+  border: var(--border);
   min-width: 90vw;
 }
 
@@ -91,7 +97,7 @@ p {
 
 footer div a {
   padding: 5px;
-  border-bottom: solid grey 3px;
+  border-bottom: var(--border);
 }
 
 .hero-banner {
@@ -105,8 +111,8 @@ footer div a {
 }
 
 .hero-banner h2 {
-  background-color: rgba(128, 128, 128, 0.95);
-  color: black;
+  background-color: var(--heading-color);
+  color: var(--font-color);
   font-size: 1.5em;
   border-radius: 10px;
 }
@@ -161,7 +167,7 @@ footer div a {
 img {
   width: 100%;
   height: auto;
-  border: solid grey 5px;
+  border: var(--border);
   filter: grayscale(100%);
   border-radius: 10px;
 }
@@ -179,9 +185,9 @@ img:hover {
   position: absolute;
   bottom: 20px; 
   left: 0%;
-  border-left: solid grey 5px;
-  background-color: rgba(128, 128, 128, 0.95);
-  color: black; 
+  border-left: var(--border);
+  background-color: var(--heading-color);
+  color: var(--font-color);
   padding: 10px 20px;
   border-radius: 0 10px 10px 0;
 }
@@ -207,7 +213,7 @@ img:hover {
   }
 
   header a:hover, footer div:hover{
-    background-color: grey;
+    background-color: var(--heading-color);
     padding: 15px;
     border-radius: 10px;
     font-weight: bold;
@@ -263,16 +269,15 @@ img:hover {
   .about-container h2 {
     flex-basis: 20%;
     margin-left: 0px;
-    margin-bottom: 39px;
+    margin-bottom: 35px;
     margin-right: auto;
     align-self: flex-start;
   }
 
   .about-container div {
-    flex-basis: 76%;
+    flex-basis: calc(76% + 5px);
     text-align: left;
-    margin-right: 3px;
-    border: solid grey 5px;
+    border: var(--border);
     border-radius: 10px;
     padding: 5px;
   }
