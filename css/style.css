@@ -20,6 +20,7 @@ h4,
 h5,
 h6 {
   margin: 0;
+  border-radius: 10px;
 }
 
 p {
@@ -69,7 +70,7 @@ nav {
   margin-bottom: -15px;
 }
 
-header li {
+header a {
   border-bottom: solid grey 3px;
 }
 
@@ -107,6 +108,7 @@ footer div a {
   background-color: rgba(128, 128, 128, 0.95);
   color: black;
   font-size: 1.5em;
+  border-radius: 10px;
 }
 
 .page-wrapper {
@@ -133,6 +135,7 @@ footer div a {
 .portfolio-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .portfolio-row {
@@ -160,6 +163,7 @@ img {
   height: auto;
   border: solid grey 5px;
   filter: grayscale(100%);
+  border-radius: 10px;
 }
 
 img:hover {
@@ -179,6 +183,7 @@ img:hover {
   background-color: rgba(128, 128, 128, 0.95);
   color: black; 
   padding: 10px 20px;
+  border-radius: 0 10px 10px 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -190,6 +195,28 @@ img:hover {
 
   h2 {
     padding: 10px 10px 10px 10px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    border-radius: 0 10px 10px 0;
+  }
+
+  header a:hover, footer div:hover{
+    background-color: grey;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.5s ease;
+    box-shadow:
+    1px 1px #373737,
+    2px 2px #373737,
+    3px 3px #373737,
+    4px 4px #373737;
   }
 
   hr {
@@ -236,12 +263,18 @@ img:hover {
   .about-container h2 {
     flex-basis: 20%;
     margin-left: 0px;
+    margin-bottom: 39px;
     margin-right: auto;
+    align-self: flex-start;
   }
 
   .about-container div {
     flex-basis: 76%;
     text-align: left;
+    margin-right: 3px;
+    border: solid grey 5px;
+    border-radius: 10px;
+    padding: 5px;
   }
 
   .portfolio-container {
