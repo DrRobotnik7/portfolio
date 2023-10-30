@@ -4,10 +4,10 @@
 
 This web application is a portfolio showcasing my completed front-end web development projects. Rather than navigating through repositories on GitHub, this portfolio allows me to easily show my projects to family, friends and prospective employers.
 
-Skills and proficiencies evidences in my projects;
+Skills and proficiencies evidenced in my projects:
 
-- Layouts: Flexbox and CSS grid
-- Languages: HTML5, CSS3, JavaScript
+- Layouts: Flexbox and CSS Grid
+- Languages: HTML5 and CSS3
 
 ## Table of Contents
 
@@ -22,13 +22,17 @@ Simply click on the URL and you will be navigated to the web application in your
 
 ## Usage
 
-<!-- URL: insert URL here -->
+URL: https://drrobotnik7.github.io/portfolio/
 
-Click in the links in the navigation bar to smoothly scroll to the relevant section of the website.
+Click on the links in the navigation bar to smoothly scroll to the relevant section of the website.
 
-Click on each project tile and you will be directed to the selected web application in a new tab in your browser.
+Hover over various elements to add some colour to the website!
 
-<!-- Insert links to images here -->
+Click on the project tiles and you will be directed to the selected web application in a new tab in your browser.
+
+Note that currently only the Horiseon and PreWork tiles currently point to a valid URL. The other images are placeholders...for now!
+
+![Jack Johnson Portfolio Web Application](/assets/images/Web%20App%20Screenshot.png)
 
 ## Credits
 
