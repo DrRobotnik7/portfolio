@@ -141,11 +141,9 @@ footer div a {
 
 .image-container {
   position: relative;
-  opacity: 0.9;
 }
 
 .image-container:hover {
-  opacity: 1;
   cursor: pointer;
 }
 
@@ -153,8 +151,18 @@ img {
   width: 100%;
   height: auto;
   border: solid grey 5px;
+  filter: grayscale(100%);
 }
 
+img:hover {
+  filter: grayscale(0%);
+  transition: 1s ease;
+  box-shadow:
+  1px 1px #373737,
+  2px 2px #373737,
+  3px 3px #373737,
+  4px 4px #373737;
+}
 .overlay {
   position: absolute;
   bottom: 20px; 
@@ -248,8 +256,7 @@ img {
   }
 
   .portfolio-row-1 div {
-    flex-basis: calc(76% + 5px)
-    
+    flex-basis: calc(76% + 5px);
   }
 
   .portfolio-row-2 {
