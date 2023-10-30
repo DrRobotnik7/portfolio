@@ -104,6 +104,13 @@ header a {
   position: relative;
 }
 
+.hero-banner div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .hero-banner h2 {
   background-color: var(--heading-color);
   color: var(--font-color);
@@ -112,12 +119,9 @@ header a {
 }
 
 .hero-banner img {
-  position: absolute;
-  top: 25px;
-  left: 40px;
-  border-radius: 75px;
-  width: 150px;
-  height: 150px;
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
   filter: grayscale(100%)
 }
 
@@ -285,6 +289,16 @@ footer div a {
 
   .hero-banner h2 {
     margin: 0 20px 20px 0;
+  }
+
+  .hero-banner img {
+    position: absolute;
+    top: 26px;
+    left: 40px;
+    border-radius: 75px;
+    width: 150px;
+    height: 150px;
+    filter: grayscale(100%)
   }
 
   /* About and Portfolio CSS */
