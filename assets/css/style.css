@@ -122,12 +122,12 @@ header a {
   border-radius: 50%;
   width: 125px;
   height: 125px;
-  filter: grayscale(100%)
+  filter: grayscale(100%);
+  cursor: crosshair;
 }
 
 .hero-banner img:hover {
   filter: grayscale(0%);
-  cursor: crosshair;
 }
 
 /* About and Portfolio CSS */
@@ -167,10 +167,6 @@ header a {
 
 .image-container {
   position: relative;
-}
-
-.image-container:hover {
-  cursor: pointer;
 }
 
 .image-container img {
@@ -218,6 +214,11 @@ img[src*="Galaxy"] {
 img[src*="SEO"] {
   cursor: not-allowed;
 }
+
+.placeholder {
+  cursor: not-allowed;
+}
+
 /* Footer CSS */
 
 footer div a {
@@ -265,7 +266,7 @@ footer div a {
 
   /* Changes on hover CSS */
 
-  header a:hover, footer div:hover{
+  header a:hover, footer div:hover {
     background-color: var(--heading-color);
     padding: 15px;
     border-radius: 10px;
