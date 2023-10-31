@@ -99,7 +99,7 @@ header a {
   align-items: center;
   height: 200px;
   margin: 0 -20px 0 -20px;
-  background-image: url(https://drrobotnik7.github.io/portfolio/assets/images/Banner.jpg);
+  background-image: url(../images/Banner.jpg);
   background-size: cover;
   position: relative;
 }
