@@ -99,7 +99,7 @@ header a {
   align-items: center;
   height: 200px;
   margin: 0 -20px 0 -20px;
-  background-image: url(/assets/images/Banner.jpg);
+  background-image: url(./assets/images/Banner.jpg);
   background-size: cover;
   position: relative;
 }
