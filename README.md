@@ -26,11 +26,11 @@ URL: https://drrobotnik7.github.io/portfolio/
 
 Click on the links in the navigation bar to smoothly scroll to the relevant section of the website.
 
-Hover over various elements to add some colour to the website!
+Hover over various elements to add some colour to the website and take aim at the nefarious Dr.Robotnik!
 
 Click on the project tiles and you will be directed to the selected web application in a new tab in your browser.
 
-Note that currently only the Horiseon and Prework tiles currently point to a valid URL. The other images are placeholders...for now!
+Note that currently only the Horiseon and Prework tiles currently point to a valid URL. The other images are placeholders...for now! The cursor will change to a 'not-allowed' cursor when you hover over these placeholders.
 
 ![Jack Johnson Portfolio Web Application](/assets/images/Web%20App%20Screenshot.png)
 
