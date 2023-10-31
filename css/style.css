@@ -127,6 +127,7 @@ header a {
 
 .hero-banner img:hover {
   filter: grayscale(0%);
+  cursor: crosshair;
 }
 
 /* About and Portfolio CSS */
@@ -206,6 +207,17 @@ figcaption {
   font-weight: bold;
 }
 
+img[src*="Interior"] {
+  cursor: not-allowed;
+}
+
+img[src*="Galaxy"] {
+  cursor: not-allowed;
+}
+
+img[src*="SEO"] {
+  cursor: not-allowed;
+}
 /* Footer CSS */
 
 footer div a {
